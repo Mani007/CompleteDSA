@@ -8,10 +8,10 @@ int main() {
     int num[5] ;
     
     // Declare a pointer to an integer variable
-    int *ptr;
+    int (*ptr)[5];
     
-    // Assign the address of num to ptr
-    ptr = num;
+    // Assign the address of num index to ptr
+    ptr = &num;
     
     // Modify the value pointed by ptr
     //*ptr = 20;
